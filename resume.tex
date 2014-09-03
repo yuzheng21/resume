@@ -1,0 +1,160 @@
+% Copyright (c) 2011 Joel Goguen <jgoguen (at) jgoguen.ca>
+% 
+% This CV uses resume.cls found at http://www.jgoguen.ca/resume/
+
+\documentclass[letterpaper,10pt]{resume}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*, itemsep=0.02in}
+\renewcommand{\labelitemi}{\raise .5ex\hbox{\tiny$\bullet$}}
+\renewcommand{\labelitemii}{\raise .5ex\hbox{\tiny$\bullet$}}
+\renewcommand{\arraystretch}{-1}
+
+% Set your name here. This will update the PDF information and the name 
+% on the CV.
+\newcommand{\myname}{Yu Zheng (Chris)}
+
+\hypersetup{
+	% baseurl={http://www.example.com},
+	pdftitle={\myname\ - Résumé},
+	pdfauthor={\myname},
+	pdfsubject={\myname's Résumé},
+	pdflang={en-CA},
+}
+
+% Set default page footer
+% \cfoot{\myname\ -- Page \thepage\ of \pageref{LastPage}}
+
+\begin{document}
+
+% CV header
+\contact{\myname}{548 Riverside Drive, Apt 3A4}{New York, NY, 10027}{chris.zhengyu@outlook.com}{(+1)(347) 258-0083}
+
+% Objective section
+\header{OBJECTIVE}
+	\begin{body}
+	To find an entry level full-time job in the field of software development or cloud computing.
+	\end{body}
+
+\header{EDUCATION}
+	\begin{body}
+	\school{Columbia University}{New York, NY}{Master of Computer Science}{Sep 2013 -- Present}
+		\begin{itemize}
+%		\item Completed Courses: cloud computing, operating systems I, machine learning, database systems
+%		\item Completed Courses: algorithms, computer networks, programming language translators, advanced databases, operating systems
+		\item Expected Graduation Date: \textit{Dec 2014} \hspace{0.2in} GPA: 3.71 / 4.0 
+		\end{itemize}
+		
+%	\smallskip
+	
+	\school{The University of Hong Kong}{Hong Kong, HK}{Bachelor of Engineering, Major in Information Engineering}{Sep 2009 -- June 2012}
+		\begin{itemize}
+		\item Graduated with Second Class Honours (Division One) \hspace{0.2in} GPA: 3.05 / 4.0
+	%	\item Dean's Honours List for 2009 -- 2010 (Given to approximately ~10\% of department )
+		\end{itemize}
+	\end{body}
+\vspace*{-2pt}
+
+\header{TECHNICAL SKILLS}
+	\begin{body}
+		\begin{tabular}{p{0.55\textwidth} p{0.45\textwidth}}
+		\begin{itemize}
+		\item Solid proficiency in Java, C/C++, Python
+		\item Experience with Apache S4, Hadoop, OpenStack
+		\item Good knowledge of TCP/IP, Data Structures and Algorithms
+		\end{itemize}
+		&
+		\begin{itemize}
+		\item Familiar with Shell Scripting, AWS, SQL
+		\item Familiar with GNU/Linux
+		\item Good with JSP, PHP, HTML
+		\end{itemize}
+		\end{tabular}
+	\end{body}
+\vspace*{-8pt}	
+	
+\header{PROJECTS AND COURSEWORKS}
+	\begin{body}
+		\employer{Computer Networks}{Columbia University}
+		\jobrole{TCP/IP Programming}{Jan 2014 -- May 2014}
+		\begin{itemize}
+		\item Implemented an online chat room with rich functionality based on a TCP, client-server model
+		\item Implemented the routing algorithm, Bellman Ford algorithm, based on a UDP, peer-to-peer model
+		\end{itemize}
+		
+%		\smallskip
+		
+		\employer{Database Systems}{Columbia University}
+		\jobrole{Information Retrieval and Data Mining Projects}{Jan 2014 -- May 2014}
+		\begin{itemize}
+		\item Implemented A Priori algorithm, mining data to obtain interesting association rules
+		\item Created corresponding infobox about query and provided feedback to ``who created'' questions
+		\item Developed an information retrieval system, implemented the Vector Space Model and the Rocchio algorithm to augment query
+		\end{itemize}
+		
+%		\smallskip
+
+%		\employer{Programming AWS}{Columbia University}
+%		\jobrole{Cloud Computing Project}{Sep 2013 -- Dec 2013}
+%		\begin{itemize}
+%		\item Developed a file sharing website and deployed on EC2, RDS, S3
+%			\begin{itemize}
+%			\item Built the website framework using JSP, Servlet, and JDBC
+%			\item Deployed the website on EC2, RDS, and S3
+%			\end{itemize}
+%		\item Wrote a tweet trend detector program using Hadoop MapReduce and deployed on EMR
+%		\end{itemize}
+		
+%		\smallskip
+		
+		\employer{Linux Kernel Programming}{Columbia University}
+		\jobrole{Operating Systems I Courseworks}{Sep 2013 -- Dec 2013}
+		\begin{itemize}
+		\item Implemented several kernel features for Android and tested on Google Nexus 7
+			\begin{itemize}
+			\item A simple completely fair scheduler which could additionally limit maximum CPU usage for each process
+			\item A semaphore which prioritized exclusive lock holders
+%			\item An out-of-memory killer which killed the process exceeding the memory limit
+			\end{itemize}
+		\end{itemize}
+	\end{body}
+
+\header{INTERNSHIPS}
+	\begin{body}
+	\employer{Huawei}{New Jersey}
+	\jobrole{OpenStack Project}{May 2014 -- July 2014}
+		\begin{itemize}
+		\item Built a cloud architecture using OpenStack, researched the network component Neutron and several plug-ins
+		\item Integrated OpenStack with Docker and a SDN controller Floodlight
+		\end{itemize}
+		
+%	\smallskip
+
+	\employer{ASTRI}{Hong Kong}
+	\jobrole{Big Data Project}{Sep 2012 -- July 2013}
+		\begin{itemize}
+		\item Developed a distributed data processing system integrating Apache S4 into Hadoop Yarn
+		\item Achieved dynamically failover by applying FSM model
+%		\item Implemented a guaranteed event processing engine
+		\end{itemize}
+	\end{body}
+\vspace*{-1pt}
+
+\header{INTEREST}
+	\begin{body}
+	\begin{itemize}
+	\item soccer (playing over 15 years), traveling (East Asian, Hawaii, California), driving, hiking
+	\end{itemize}
+	\end{body}
+
+%\header{ACTIVITIES}
+%	\begin{body}
+%	\employer{Chinese Undergraduate Soccer Team}{The University of Hong Kong}
+%	\jobrole{Team Captain}{Sep 2010 -- June 2012}
+%	\begin{itemize}
+%	\item Led the team to its first championship in an inter-university tournament
+%	\item MVP of the tournament final
+%	\item Managed the team for two years, including weekly training, financing and asset management
+%	\end{itemize}
+%	\end{body}
+	
+\end{document}
